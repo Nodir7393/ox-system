@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<title>CommodityType index</title>
+
+{% block body %}
+    <h1>CommodityType index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commodity_type in commodity_types %}
+            <tr>
+                <td>{{ commodity_type.id }}</td>
+                <td>{{ commodity_type.size }}</td>
+                <td>{{ commodity_type.color }}</td>
+                <td>
+                    <a href="{{ path('app_commodity_type_show', {'id': commodity_type.id}) }}">show</a>
+                    <a href="{{ path('app_commodity_type_edit', {'id': commodity_type.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_commodity_type_new') }}">Create new</a>
+{% endblock %}

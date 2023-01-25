@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<title>New CommodityType</title>
+
+{% block body %}
+    <h1>Create new CommodityType</h1>
+
+    {{ include('commodity_type/_form.html.twig') }}
+
+    <a href="{{ path('app_commodity_type_index') }}">back to list</a>
+{% endblock %}

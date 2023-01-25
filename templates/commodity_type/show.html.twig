@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<title>CommodityType</title>
+
+{% block body %}
+    <h1>CommodityType</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ commodity_type.id }}</td>
+            </tr>
+            <tr>
+                <th>Size</th>
+                <td>{{ commodity_type.size }}</td>
+            </tr>
+            <tr>
+                <th>Color</th>
+                <td>{{ commodity_type.color }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_commodity_type_index') }}">back to list</a>
+
+    <a href="{{ path('app_commodity_type_edit', {'id': commodity_type.id}) }}">edit</a>
+
+    {{ include('commodity_type/_delete_form.html.twig') }}
+{% endblock %}
