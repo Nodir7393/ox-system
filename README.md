@@ -22,7 +22,7 @@ Formalar bilan ishlashga: [FormType](https://symfony.com/doc/current/forms.html)
 
 # REACT ADMIN
 
-src: /admin
+src: ./admin
 ### `npm install`
 ### `npm start`
 [http://localhost:3000](http://localhost:3000)
