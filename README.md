@@ -12,6 +12,7 @@ Formalar bilan ishlashga: [FormType](https://symfony.com/doc/current/forms.html)
 
 ## installations
 
+[Install Symfony CLI](https://symfony.com/download)
 ### `symfony composer install`
 ### `symfony console doctrine:migrations:migrate`
 ### `symfony serve`
