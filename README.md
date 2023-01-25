@@ -17,6 +17,8 @@ Formalar bilan ishlashga: [FormType](https://symfony.com/doc/current/forms.html)
 ### `symfony console doctrine:migrations:migrate`
 ### `symfony serve`
 [https://127.0.0.1:8000/api](https://127.0.0.1:8000/api)
+[https://127.0.0.1:8000/commodity](https://127.0.0.1:8000/commodity/)
+[https://127.0.0.1:8000/commodity-type](https://127.0.0.1:8000/commodity-type/)
 
 # REACT ADMIN
 
